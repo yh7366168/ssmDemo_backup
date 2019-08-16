@@ -1,0 +1,61 @@
+/************************表格公共样式************************/
+.common_table {
+    margin-top: 30px;
+    margin-left: 30px;
+    border-collapse: collapse;
+    border:1px solid #a29945;
+}
+.common_table tr, td {
+    /*合并成单一的边框*/
+    border-collapse: collapse;
+    border:1px solid #a29945;
+}
+.common_table td {
+    text-align: center;
+    height: 30px;
+}
+/****************新增、删除、修改按钮********************/
+.crudDiv {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+/*新增、删除、修改按钮样式*/
+.crudDiv button {
+    width: 80px;
+    height: 28px;
+    margin-right: 15px;
+}
+
+/************************查询按钮************************/
+.selectDiv {
+    width: 910px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.selectDiv span {
+    margin-right: 8px;
+}
+
+
+.selectDiv button {
+    margin-left: 20px;
+    width: 80px;
+}
+
+/**************************翻页**************************/
+.page_div {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+/*翻页内部间距*/
+.page_div span {
+    margin-right: 10px;
+    font-size: 13px;
+}
+/*翻页输入框*/
+.page_input_div {
+    width: 30px;
+    text-align: center;
+}

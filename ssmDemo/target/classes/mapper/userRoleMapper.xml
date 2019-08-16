@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yh.dao.UserRoleDao">
+    <resultMap id="BaseResultMap" type="com.yh.pojo.UserRole">
+        <id column="user_id" property="userId" jdbcType="INTEGER"/>
+        <id column="role_id" property="roleId" jdbcType="INTEGER"/>
+        <result column="create_user" property="createUser" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_user" property="updateUser" jdbcType="VARCHAR"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+      user_id, role_id, create_user, create_time, update_user, update_time
+    </sql>
+
+    <sql id="wheres">
+        <where>
+            <if test="userId != null">
+                user_id = #{userId,jdbcType=INTEGER}
+            </if>
+            <if test="roleId != null">
+                role_id = #{roleId,jdbcType=INTEGER}
+            </if>
+        </where>
+    </sql>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.yh.pojo.UserRole">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_user_role
+        where user_id = #{userId,jdbcType=INTEGER}
+        and role_id = #{roleId,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectBySelective" resultMap="BaseResultMap" parameterType="com.yh.pojo.UserRole">
+        select
+        <include refid="Base_Column_List"></include>
+        from sys_user_role
+        <include refid="wheres"></include>
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="com.yh.pojo.UserRole">
+    delete from sys_user_role
+    where user_id = #{userId,jdbcType=INTEGER}
+      and role_id = #{roleId,jdbcType=INTEGER}
+    </delete>
+
+    <insert id="insert" parameterType="com.yh.pojo.UserRole">
+    insert into sys_user_role (user_id, role_id, create_user,
+      create_time, update_user, update_time
+      )
+    values (#{userId,jdbcType=INTEGER}, #{roleId,jdbcType=INTEGER}, #{createUser,jdbcType=VARCHAR},
+      #{createTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+    <insert id="insertSelective" parameterType="com.yh.pojo.UserRole">
+        insert into sys_user_role
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="roleId != null">
+                role_id,
+            </if>
+            <if test="createUser != null">
+                create_user,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="updateUser != null">
+                update_user,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="roleId != null">
+                #{roleId,jdbcType=INTEGER},
+            </if>
+            <if test="createUser != null">
+                #{createUser,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateUser != null">
+                #{updateUser,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.yh.pojo.UserRole">
+        update sys_user_role
+        <set>
+            <if test="createUser != null">
+                create_user = #{createUser,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateUser != null">
+                update_user = #{updateUser,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where user_id = #{userId,jdbcType=INTEGER}
+        and role_id = #{roleId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.yh.pojo.UserRole">
+    update sys_user_role
+    set create_user = #{createUser,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_user = #{updateUser,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where user_id = #{userId,jdbcType=INTEGER}
+      and role_id = #{roleId,jdbcType=INTEGER}
+    </update>
+
+    <resultMap id="userRoleMap" type="com.yh.pojo.vo.UserRoleVO">
+        <result column="userId" property="userId"></result>
+        <result column="username" property="userName"></result>
+        <result column="roleId" property="roleId"></result>
+        <result column="roleName" property="roleName"></result>
+    </resultMap>
+
+    <select id="queryCurrentUserRole" parameterType="java.lang.String" resultMap="userRoleMap">
+      SELECT
+	    t1.user_id as userId, t1.username as username, t3.role_id as roleId, t3.role_name as roleName
+      FROM
+	    sys_user t1
+      LEFT JOIN sys_user_role t2 ON t1.user_id = t2.user_id
+      LEFT JOIN sys_role t3 ON t2.role_id = t3.role_id
+      WHERE
+	    t1.username = #{username}
+    </select>
+</mapper>

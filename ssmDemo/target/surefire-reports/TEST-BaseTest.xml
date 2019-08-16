@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="BaseTest" time="1.799" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="E:\gitDemo\ssmDemo\ssmDemo\target\test-classes;E:\gitDemo\ssmDemo\ssmDemo\target\classes;E:\maven\RepMaven\org\springframework\spring-core\4.2.5.RELEASE\spring-core-4.2.5.RELEASE.jar;E:\maven\RepMaven\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;E:\maven\RepMaven\org\springframework\spring-web\4.2.5.RELEASE\spring-web-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-beans\4.2.5.RELEASE\spring-beans-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-oxm\4.2.5.RELEASE\spring-oxm-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-tx\4.2.5.RELEASE\spring-tx-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-jdbc\4.2.5.RELEASE\spring-jdbc-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-webmvc\4.2.5.RELEASE\spring-webmvc-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-expression\4.2.5.RELEASE\spring-expression-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-context\4.2.5.RELEASE\spring-context-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-context-support\4.2.5.RELEASE\spring-context-support-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-aop\4.2.5.RELEASE\spring-aop-4.2.5.RELEASE.jar;E:\maven\RepMaven\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;E:\maven\RepMaven\org\springframework\spring-test\4.2.5.RELEASE\spring-test-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;E:\maven\RepMaven\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;E:\maven\RepMaven\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar;E:\maven\RepMaven\commons-dbcp\commons-dbcp\1.2.2\commons-dbcp-1.2.2.jar;E:\maven\RepMaven\commons-pool\commons-pool\1.3\commons-pool-1.3.jar;E:\maven\RepMaven\javax\servlet\jstl\1.1.2\jstl-1.1.2.jar;E:\maven\RepMaven\taglibs\standard\1.1.2\standard-1.1.2.jar;E:\maven\RepMaven\junit\junit\4.11\junit-4.11.jar;E:\maven\RepMaven\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\maven\RepMaven\com\alibaba\fastjson\1.2.4\fastjson-1.2.4.jar;E:\maven\RepMaven\com\fasterxml\jackson\core\jackson-core\2.5.2\jackson-core-2.5.2.jar;E:\maven\RepMaven\com\fasterxml\jackson\core\jackson-databind\2.5.2\jackson-databind-2.5.2.jar;E:\maven\RepMaven\com\fasterxml\jackson\core\jackson-annotations\2.5.0\jackson-annotations-2.5.0.jar;E:\maven\RepMaven\org\projectlombok\lombok\1.16.14\lombok-1.16.14.jar;E:\maven\RepMaven\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;E:\maven\RepMaven\ch\qos\logback\logback-core\1.1.11\logback-core-1.1.11.jar;E:\maven\RepMaven\ch\qos\logback\logback-classic\1.1.11\logback-classic-1.1.11.jar;E:\maven\RepMaven\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar;E:\maven\RepMaven\org\aspectj\aspectjweaver\1.5.4\aspectjweaver-1.5.4.jar;E:\maven\RepMaven\redis\clients\jedis\2.9.0\jedis-2.9.0.jar;E:\maven\RepMaven\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;E:\maven\RepMaven\com\lowagie\itext\2.0.8\itext-2.0.8.jar;E:\maven\RepMaven\bouncycastle\bcmail-jdk14\138\bcmail-jdk14-138.jar;E:\maven\RepMaven\bouncycastle\bcprov-jdk14\138\bcprov-jdk14-138.jar;E:\maven\RepMaven\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;E:\maven\RepMaven\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;E:\maven\RepMaven\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_31\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\T430487\AppData\Local\Temp\surefire2766048097648827561\surefirebooter6917272001083402045.jar C:\Users\T430487\AppData\Local\Temp\surefire2766048097648827561 2019-08-14T15-46-20_722-jvmRun1 surefire8642142762180690464tmp surefire_09187069372013329335tmp"/>
+    <property name="surefire.test.class.path" value="E:\gitDemo\ssmDemo\ssmDemo\target\test-classes;E:\gitDemo\ssmDemo\ssmDemo\target\classes;E:\maven\RepMaven\org\springframework\spring-core\4.2.5.RELEASE\spring-core-4.2.5.RELEASE.jar;E:\maven\RepMaven\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;E:\maven\RepMaven\org\springframework\spring-web\4.2.5.RELEASE\spring-web-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-beans\4.2.5.RELEASE\spring-beans-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-oxm\4.2.5.RELEASE\spring-oxm-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-tx\4.2.5.RELEASE\spring-tx-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-jdbc\4.2.5.RELEASE\spring-jdbc-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-webmvc\4.2.5.RELEASE\spring-webmvc-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-expression\4.2.5.RELEASE\spring-expression-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-context\4.2.5.RELEASE\spring-context-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-context-support\4.2.5.RELEASE\spring-context-support-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\springframework\spring-aop\4.2.5.RELEASE\spring-aop-4.2.5.RELEASE.jar;E:\maven\RepMaven\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;E:\maven\RepMaven\org\springframework\spring-test\4.2.5.RELEASE\spring-test-4.2.5.RELEASE.jar;E:\maven\RepMaven\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;E:\maven\RepMaven\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;E:\maven\RepMaven\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar;E:\maven\RepMaven\commons-dbcp\commons-dbcp\1.2.2\commons-dbcp-1.2.2.jar;E:\maven\RepMaven\commons-pool\commons-pool\1.3\commons-pool-1.3.jar;E:\maven\RepMaven\javax\servlet\jstl\1.1.2\jstl-1.1.2.jar;E:\maven\RepMaven\taglibs\standard\1.1.2\standard-1.1.2.jar;E:\maven\RepMaven\junit\junit\4.11\junit-4.11.jar;E:\maven\RepMaven\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\maven\RepMaven\com\alibaba\fastjson\1.2.4\fastjson-1.2.4.jar;E:\maven\RepMaven\com\fasterxml\jackson\core\jackson-core\2.5.2\jackson-core-2.5.2.jar;E:\maven\RepMaven\com\fasterxml\jackson\core\jackson-databind\2.5.2\jackson-databind-2.5.2.jar;E:\maven\RepMaven\com\fasterxml\jackson\core\jackson-annotations\2.5.0\jackson-annotations-2.5.0.jar;E:\maven\RepMaven\org\projectlombok\lombok\1.16.14\lombok-1.16.14.jar;E:\maven\RepMaven\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;E:\maven\RepMaven\ch\qos\logback\logback-core\1.1.11\logback-core-1.1.11.jar;E:\maven\RepMaven\ch\qos\logback\logback-classic\1.1.11\logback-classic-1.1.11.jar;E:\maven\RepMaven\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar;E:\maven\RepMaven\org\aspectj\aspectjweaver\1.5.4\aspectjweaver-1.5.4.jar;E:\maven\RepMaven\redis\clients\jedis\2.9.0\jedis-2.9.0.jar;E:\maven\RepMaven\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;E:\maven\RepMaven\com\lowagie\itext\2.0.8\itext-2.0.8.jar;E:\maven\RepMaven\bouncycastle\bcmail-jdk14\138\bcmail-jdk14-138.jar;E:\maven\RepMaven\bouncycastle\bcprov-jdk14\138\bcprov-jdk14-138.jar;E:\maven\RepMaven\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;E:\maven\RepMaven\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;E:\maven\RepMaven\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\T430487"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_31\jre"/>
+    <property name="basedir" value="E:\gitDemo\ssmDemo\ssmDemo"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\T430487\AppData\Local\Temp\surefire2766048097648827561\surefirebooter6917272001083402045.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_31\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_31-b13"/>
+    <property name="user.name" value="T430487"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="6.1"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="E:\maven\RepMaven"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\T430487\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2018.2.6"/>
+    <property name="java.version" value="1.8.0_31"/>
+    <property name="user.dir" value="E:\gitDemo\ssmDemo\ssmDemo"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_31\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;.;C:\Program Files\Java\jdk1.8.0_31\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\software\GIT\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.31-b07"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="test" classname="BaseTest" time="0.003">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mainController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.servlet.http.HttpSession com.yh.controller.MainController.session; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [javax.servlet.http.HttpSession] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.servlet.http.HttpSession com.yh.controller.MainController.session; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [javax.servlet.http.HttpSession] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [javax.servlet.http.HttpSession] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+</error>
+    <system-err><![CDATA[八月 14, 2019 3:46:24 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+信息: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+八月 14, 2019 3:46:24 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+信息: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1bce4f0a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e3a8624, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5c3bd550, org.springframework.test.context.support.DirtiesContextTestExecutionListener@91161c7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@604ed9f0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6a4f787b]
+八月 14, 2019 3:46:24 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:\gitDemo\ssmDemo\ssmDemo\target\classes\spring-mvc.xml]
+八月 14, 2019 3:46:24 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:\gitDemo\ssmDemo\ssmDemo\target\classes\spring-mybatis.xml]
+八月 14, 2019 3:46:24 下午 org.springframework.context.support.GenericApplicationContext prepareRefresh
+信息: Refreshing org.springframework.context.support.GenericApplicationContext@1ee807c6: startup date [Wed Aug 14 15:46:24 CST 2019]; root of context hierarchy
+八月 14, 2019 3:46:25 下午 org.springframework.beans.factory.config.PropertyPlaceholderConfigurer loadProperties
+信息: Loading properties file from class path resource [jdbc.properties]
+八月 14, 2019 3:46:25 下午 org.springframework.context.support.GenericApplicationContext refresh
+警告: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mainController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.servlet.http.HttpSession com.yh.controller.MainController.session; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [javax.servlet.http.HttpSession] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+八月 14, 2019 3:46:25 下午 org.springframework.test.context.TestContextManager prepareTestInstance
+严重: Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5c3bd550] to prepare test instance [BaseTest@460ebd80]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:249)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mainController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.servlet.http.HttpSession com.yh.controller.MainController.session; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [javax.servlet.http.HttpSession] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 27 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.servlet.http.HttpSession com.yh.controller.MainController.session; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [javax.servlet.http.HttpSession] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 43 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [javax.servlet.http.HttpSession] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1373)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1119)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 45 more
+
+]]></system-err>
+  </testcase>
+</testsuite>

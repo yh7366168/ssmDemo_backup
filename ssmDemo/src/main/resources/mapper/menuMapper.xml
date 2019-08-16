@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yh.dao.MenuDao">
+    <!-- 实例类和DB映射-->
+    <resultMap id="BaseResultMap" type="com.yh.pojo.Menu">
+        <id column="menu_id" property="menuId" jdbcType="INTEGER"/>
+        <result column="menu_name" property="menuName" jdbcType="VARCHAR"/>
+        <result column="menu_level" property="menuLevel" jdbcType="TINYINT"/>
+        <result column="parent_id" property="parentId" jdbcType="INTEGER"/>
+        <result column="menu_status" property="menuStatus" jdbcType="TINYINT"/>
+        <result column="menu_url" property="menuUrl" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Common_List">
+        menu_id, menu_name, menu_level, parent_id, menu_status, menu_url, create_time, update_time
+    </sql>
+
+    <sql id="where_params">
+        <!-- where标签智能，存在一个where条件时才插入where关键字。如果条件以and或者or开始，会自动去除 -->
+        <where>
+            <if test="menuName != null">
+                menu_name = #{menuName}
+            </if>
+            <if test="menuLevel != null">
+                AND menu_level = #{menuLevel}
+            </if>
+            <if test="parentId != null">
+                AND parent_id = #{parentId}
+            </if>
+            <if test="menuStatus != null">
+                AND menu_status = #{menuStatus}
+            </if>
+
+            <if test="secondMenuLevel != null">
+                AND menu_level = 2
+            </if>
+            <!--通过parent_id排序-->
+            <if test="orderByParntId != null">
+                AND 1=1 ORDER BY parent_id ASC
+            </if>
+        </where>
+    </sql>
+
+    <select id="queryMuneById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Common_List"></include>
+        FROM sys_menu WHERE menu_id = #{menuId}
+    </select>
+
+    <select id="queryListByParams" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT
+        <include refid="Base_Common_List"></include>
+        FROM sys_menu
+        <include refid="where_params"></include>
+    </select>
+
+    <!-- 统计所有的菜单-->
+    <select id="queryPageCount" resultType="java.lang.Integer" parameterType="java.util.Map">
+        SELECT count(1) FROM sys_menu
+        <include refid="where_params"></include>
+    </select>
+
+    <select id="queryPageList" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT
+        <include refid="Base_Common_List"></include>
+        FROM sys_menu
+        <include refid="where_params"></include>
+        limit #{beginNum}, #{pageSize}
+    </select>
+
+    <select id="queryRoleMenuListByParams" parameterType="java.util.Map" resultMap="BaseResultMap">
+        SELECT DISTINCT
+	      t3.menu_id AS menuId,
+	      t3.menu_name AS menuName,
+	      t3.menu_level AS menuLevel,
+	      t3.parent_id AS parentId,
+	      t3.menu_url AS menuUrl,
+	      t3.menu_status AS menuStatus,
+	      t3.create_time AS createTime,
+	      t3.update_time AS updateTime
+        FROM
+	      sys_menu t3
+        LEFT JOIN sys_role_menu t4 ON t3.menu_id = t4.menu_id
+        WHERE
+	      t3.menu_level = 2
+        AND role_id IN (
+	        SELECT
+		        t2.role_id
+	        FROM
+		    sys_user t1
+	        LEFT JOIN sys_user_role t2 ON t1.user_id = t2.user_id
+	        WHERE
+		      t1.username = #{username})
+    </select>
+
+</mapper>

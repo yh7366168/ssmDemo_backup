@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yh.dao.RoleMenuDao">
+    <resultMap id="BaseResultMap" type="com.yh.pojo.RoleMenu">
+        <id column="role_id" property="roleId" jdbcType="INTEGER"/>
+        <id column="menu_id" property="menuId" jdbcType="INTEGER"/>
+        <id column="button_id" property="buttonId" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        role_id, menu_id, button_id
+    </sql>
+
+    <sql id="common_where">
+        <where>
+            <if test="roleId != null">
+                role_id = #{roleId,jdbcType=INTEGER}
+            </if>
+            <if test="menuId != null">
+                and menu_id = #{menuId,jdbcType=INTEGER}
+            </if>
+            <if test="buttonId != null">
+                and button_id = #{buttonId,jdbcType=INTEGER}
+            </if>
+        </where>
+    </sql>
+
+    <select id="selectByRoleIdAndMeneId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"></include>
+        from sys_role_menu
+        <where>
+        <if test="roleId != null">
+            role_id = #{roleId,jdbcType=INTEGER}
+        </if>
+        <if test="menuId != null">
+            and menu_id = #{menuId,jdbcType=INTEGER}
+        </if>
+    </where>
+    </select>
+
+    <delete id="deleteByRoleId" parameterType="java.lang.Integer">
+      delete from sys_role_menu where role_id = #{roleId,jdbcType=INTEGER}
+    </delete>
+
+    <insert id="insert" parameterType="com.yh.pojo.RoleMenu">
+      insert into sys_role_menu (role_id, menu_id, button_id)
+      values
+      (#{roleId,jdbcType=INTEGER}, #{menuId,jdbcType=INTEGER}, #{buttonId,jdbcType=INTEGER})
+    </insert>
+
+    <insert id="batchInsertRoleMenu" parameterType="java.util.List">
+      insert into sys_role_menu (role_id, menu_id, button_id)
+      values
+      <foreach collection="list" item="item" open="(" separator="),(" close=")">
+        #{item.roleId}, #{item.menuId}, #{item.buttonId}
+      </foreach>
+    </insert>
+
+    <insert id="insertSelective" parameterType="com.yh.pojo.RoleMenu">
+        insert into sys_role_menu
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="roleId != null">
+                role_id,
+            </if>
+            <if test="menuId != null">
+                menu_id,
+            </if>
+            <if test="buttonId != null">
+                button_id,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="roleId != null">
+                #{roleId,jdbcType=INTEGER},
+            </if>
+            <if test="menuId != null">
+                #{menuId,jdbcType=INTEGER},
+            </if>
+            <if test="buttonId != null">
+                #{buttonId,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+</mapper>
